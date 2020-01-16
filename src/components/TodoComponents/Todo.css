@@ -1,5 +1,6 @@
 body {
-    background-color: lightgray;
+    background-color: #DAAD86;
+    margin-top: 100px;
 }
 
 .app {
@@ -14,23 +15,44 @@ body {
 }
 h1 {
     text-align: left;
-    color: skyblue;
+    color: #8D8741;
 }
-
-
 
 .todo-list {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
 }
+
 .todo {
-    background-color: skyblue;
+    background-color: #659DBD;
     width: 48%;
     margin: 5px 0;
+    border-radius: 10px;
 }
 
 .todo.completed {
-    background-color: white;
+    background-color: #FBEEC1;
     text-decoration: line-through;
+}
+
+form > input {
+    background-color: #DAAD86;
+    border: 0;
+    border-bottom: 1px solid #8D8741;
+    margin-right: 5px;
+    outline: 0;
+    font-size: 1.4rem;
+    color: #8D8741
+}
+
+button {
+    background-color: #659DBD;
+    border: 1px solid #659DBD;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.clear-button {
+    margin-top: 15px;
 }

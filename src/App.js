@@ -6,7 +6,7 @@ import './components/TodoComponents/Todo.css'
 const todos = [
   {
       task: 'Your Todos',
-      id: '',
+      id: Date.now(),
       completed: false
   }
 ];
@@ -41,7 +41,7 @@ class App extends React.Component {
             completed: !todo.completed
           };
         }
-        return DataTransferItem;
+        return todo;
       })
     };
     this.setState(newState);
